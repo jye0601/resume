@@ -10,7 +10,7 @@ html {
   word-break: keep-all;
   font-family: Pretendard, -apple-system;
   letter-spacing: -0.3px;
-  color: #222222;
+  color: #000000;
   padding-bottom: 2rem;
   margin: 0px;
   text-size-adjust: 100%;
@@ -25,7 +25,7 @@ body::before {
   content: "";
   width: 100%;
   height: 10px;
-  background: linear-gradient(90deg, #f3f7fc, #ff00aa98);
+  background: linear-gradient(90deg, #ffffff, #ffa993);
 }
 
 .container {
@@ -50,11 +50,90 @@ hr {
 }
 
 .period-mark {
-  color: rgb(255, 0, 128);
+  color: rgb(255, 185, 172);
 }
 
 .big-pharagraph {
   font-size: 2rem;
   line-height: 1.4;
   font-weight: 500;
+}
+
+h2 {
+  font=size: 3rem;
+  margin: 4rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem 9;
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  color: #ffbba7;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+ul > li {
+  position: relative;
+  padding: 0.2rem 0 0.2rem;
+}
+
+ui > li:before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: ".";
+  color: #ff7f7f;
+}
+
+.row {
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 0;
+}
+
+.row-left {
+  flex-basis: 18rem;
+  padding-right: 1rem;
+  flex-shrink: 0;
+}
+
+.row-right {
+  flex-grow: 1;
+}
+
+.other {
+  padding: 3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.role {
+  display: black;
+}
+
+.project {
+  padding: 1.5rem 0;
+}
+
+.project:first-child {
+  padding-top: 0;
+}
+
+.time {
+  display: block;
+  margin-bottom: 1.5rem;
 }
